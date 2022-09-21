@@ -1,0 +1,255 @@
+@media screen and (max-width: 1300px) {
+
+    .navigation,
+    .call_request {
+        display: none;
+    }
+
+    .header {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 0 40px;
+        max-width: 100vw;
+    }
+
+    .header-grid {
+        justify-content: center;
+    }
+
+    .tel {
+        text-decoration-line: none;
+        color: #ffffff;
+    }
+
+    .intro .buttons {
+        flex-direction: column;
+    }
+
+    .intro .buttons .calculate {
+        margin: 0 0 20px 0;
+    }
+
+    .intro .buttons .button-spec {
+        /* color: #FFFFFF; */
+        width: unset;
+        height: 80px;
+        border-radius: 0;
+    }
+
+
+
+
+
+
+    .projects-grid {
+        padding: 105px 0 0 0;
+        grid-template-columns: 1fr;
+    }
+
+    .projects-list-column,
+    .image-selector,
+    .projects-empty-column {
+        display: none;
+    }
+
+    .h2-projects {
+        text-align: center;
+    }
+
+    .project-description {
+        grid-row-start: 3;
+    }
+
+    .projects-left-column {
+        max-width: 95vw;
+        align-items: center;
+    }
+
+    .projects-right-column img {
+        /* grid-row-start: 1; */
+        max-width: 87vw;
+    }
+
+
+
+
+
+
+    .online-control,
+    .online-control .video,
+    .online-control-section {
+        background-color: #131313;
+    }
+
+    .online-control {
+        position: unset;
+        margin-top: -5px;
+    }
+
+    .online-control .video {
+        display: flex;
+        flex-basis: 0;
+    }
+
+    .video-preview {
+        max-width: 90vw;
+    }
+
+    .online-control .online-control-text {
+font-size: 1.1rem;
+color: #FFFFFF;
+}
+
+    .form-online-control {
+        max-width: 100vw;
+    }
+
+    .form-online-control-data-line {
+        flex-direction: column;
+    }
+
+    .form-online-control-data-line label,
+    .form-online-control .for-custom-checkbox,
+    .form-online-control input[name="submit"] {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+    .types-of-repair {
+        width: 80vw;
+
+    }
+
+    .types-with-prices {
+        grid-template-columns: 1fr;
+        column-gap: 0vw;
+        margin: 20px 0 0 0;
+
+    }
+
+    .types-with-prices-element img {
+        width: 100vw;
+    }
+
+    .types-with-prices-description {
+        align-self: flex-start;
+    }
+
+    .types-of-repair-free-measurements,
+    .measurements-stages-underneath {
+        display: none;
+    }
+
+    .reconstruction-styles-list {
+        display: none;
+    }
+
+
+
+
+    .we-realize_gallery{
+        background-image: none;
+    }
+
+    .we-realize-flex {
+        flex-direction: column;
+    }
+
+    .we-realize-left {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .we-realize-right {
+        flex-wrap: nowrap;
+        position: unset;
+    }
+
+    .we-realize-right>img {
+        /* margin:50px;*/
+        padding: 0 0 20px 0;
+    }
+
+    .we-realize-right>img:nth-of-type(-n+1) {
+        margin-top: 0px;
+    }
+
+    .we-realize-right>img:nth-of-type(n+3) {
+        /* position: relative;
+        top:-100px; */
+        padding-left: 0px;
+    }
+
+    .we-realize-right>img:nth-of-type(n+2) {
+        display: none;
+    }
+
+
+
+
+
+
+    .our-clients,
+    .map-background,
+    .our-clients-background {
+        display: none;
+    }
+
+    .all-reviews {
+
+        grid-template-columns: 1fr;
+    }
+
+    .review {
+        margin-bottom: 40px;
+    }
+
+
+
+
+    .question-map {
+        position: unset;
+        background-color: #131313;
+        background-size: 120vw;
+    }
+
+    .question-map .form-measurements-request {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        max-width: 100vw;
+        padding: 0 20px 40px 20px;
+    }
+
+    .question-map .form-measurements-request>label:nth-of-type(n) {
+        width: 100%;
+        margin: 50px 0 0 0;
+        justify-self: stretch;
+    }
+
+    .question-map>.form-measurements-request .div-checkbox,
+    .question-map>.form-measurements-request input[name="call-measurer"] {
+
+        align-self: center;
+        margin: 40px 0px 0 0px;
+        border-radius: 0;
+        box-shadow: unset;
+    }
+
+
+
+
+
+
+
+
+}

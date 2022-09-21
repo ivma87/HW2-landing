@@ -11,22 +11,23 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>IC "Repair Design Project"</title>
 </head>
 
 <body class="body">
-    <header class="header">
+    <header id="home" class="header">
         <div class="container header-grid">
             <!-- <div class="header-grid"> -->
             <span class="logo">IC "Repair Design Project"</span>
             <nav class="nav">
                 <ul class="navigation">
-                    <li class="navigation-item"><a href="#">Home</a></li>
-                    <li class="navigation-item"><a href="#">Projects</a></li>
-                    <li class="navigation-item"><a href="#">Measurement</a></li>
+                    <li class="navigation-item"><a href="#home">Home</a></li>
+                    <li class="navigation-item"><a href="#projects">Projects</a></li>
+                    <li class="navigation-item"><a href="#measurements">Measurement</a></li>
                     <li class="navigation-item"><a href="#">Team</a></li>
-                    <li class="navigation-item"><a href="#">Reviews</a></li>
-                    <li class="navigation-item"><a href="#">Contacts</a></li>
+                    <li class="navigation-item"><a href="#reviews">Reviews</a></li>
+                    <li class="navigation-item"><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
             <span class="tel">+7 (928) 768-32-39</span>
@@ -50,7 +51,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="container projects-grid">
                 <div class="projects-empty-column"></div>
                 <div class="projects-list-column">
@@ -96,7 +97,7 @@
                             <span class="p-projects">Upon request</span>
                         </div>
                     </div>
-                    <img src="./images/Group 8.4.svg" alt="image selector">
+                    <img src="./images/Group 8.4.svg" alt="image selector" class="image-selector">
                 </div>
                 <div class="projects-right-column">
                     <img src="./images/image 2.1.png" alt="Rostov-on-Don, Admiral">
@@ -104,41 +105,47 @@
                 </div>
             </div>
         </section>
-        <section class="online-control container">
-            <h3>online control</h3>
-            <img src="././images/Group 67.svg" alt="Camera">
-            <div class="video">
-                <img src="./images/image 6.png" alt="online control" class="video-preview">
-                <img src="./images/Group 8.svg" alt="button-play" class="button-play">
-            </div>
-            <hr class="hr" />
-            <p class="online-control-text">
-                At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time,
-                you can go to our website and monitor the progress of work in your apartment. You can watch the live
-                broadcast from one of our facilities!
-                Leave a request below and you will receive a link to the broadcast.
-            </p>
-            <form action="#" method="get" class="form-online-control">
-                <div class="form-online-control-data-line">
-                    <label>Name
-                        <input name="name" placeholder="What is your name:" required="true" type="text">
-                    </label>
-                    <label>Phone
-                        <input name="phone" placeholder="Your phone number:" required="true" type="tel">
-                    </label>
-                    <input type="submit" name="submit" value="Submit">
-                </div>
-
-                <div class="form-online-control-checkbox-line">
-                    <div class="for-custom-checkbox">
-                        <input type="checkbox" name="personal data" required="true">
-                        <span class="span-checkbox"></span>
-                        <label for="personal data" class="label">I agree to the processing of personal data</label>
+        <section class="online-control-section">
+            <div class="container">
+                <div class="online-control">
+                    <h3>online control</h3>
+                    <img src="././images/Group 67.svg" alt="Camera">
+                    <div class="video">
+                        <img src="./images/image 6.png" alt="online control" class="video-preview">
+                        <img src="./images/Group 8.svg" alt="button-play" class="button-play">
                     </div>
+                    <hr class="hr" />
+                    <p class="online-control-text">
+                        At each facility, a camera is installed that broadcasts the progress of work on the clock. At
+                        any time,
+                        you can go to our website and monitor the progress of work in your apartment. You can watch the
+                        live
+                        broadcast from one of our facilities!
+                        Leave a request below and you will receive a link to the broadcast.
+                    </p>
+                    <form action="#" method="get" class="form-online-control">
+                        <div class="form-online-control-data-line">
+                            <label>Name
+                                <input name="name" placeholder="What is your name:" required="true" type="text">
+                            </label>
+                            <label>Phone
+                                <input name="phone" placeholder="Your phone number:" required="true" type="tel">
+                            </label>
+                            <input type="submit" name="submit" value="Submit">
+                        </div>
+
+                        <div class="form-online-control-checkbox-line">
+                            <div class="for-custom-checkbox">
+                                <input type="checkbox" name="personal data" required="true">
+                                <span class="span-checkbox"></span>
+                                <label for="personal data" class="label">I agree to the processing of personal
+                                    data</label>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </section>
-        <!-- <div class="container"> -->
         <section class="types-of-repair container">
             <h2>TYPES OF REPAIR</h2>
             <img src="././images/Group 11.4.svg" alt="hammer">
@@ -192,7 +199,7 @@
                     </div>
                 </div>
             </div>
-            <div class="types-of-repair-free-measurements">
+            <div id="measurements" class="types-of-repair-free-measurements">
                 <ul class="measurements-stages-list">
                     <li>
                         <div class="measurement-stage-number">01</div>
@@ -239,15 +246,16 @@
                     <input type="button" name="call-measurer" value="Call the measurer">
                 </form>
             </div>
-            <div class="measurements-stages-underneath">
-                <img src="./images/image 6.1.png" alt="" class="measurements-stages-bkgrnd">
-                <div class="coin-pig">
-                    <img src="./images/coin-pig.svg" alt="coin-pig">
-                    <span>Help save 10 - 20% of the<br> cost of materials</span>
-                </div>
-            </div>
+
         </section>
-        <!-- </div> -->
+        <div class="measurements-stages-underneath">
+            <img src="./images/image 6.1.png" alt="" class="measurements-stages-bkgrnd">
+            <div class="coin-pig">
+                <img src="./images/coin-pig.svg" alt="coin-pig">
+                <span>Help save 10 - 20% of the<br> cost of materials</span>
+            </div>
+        </div>
+
         <section class="we-realize_gallery">
             <div class="container we-realize-flex">
                 <div class="we-realize-left">
@@ -275,6 +283,131 @@
                 </div>
             </div>
         </section>
+        <section id="reviews" class="our-clients container">
+            <h2>our clients</h2>
+            <img src="././images/Group 2.14.svg" alt="Camera">
+            <p>80% of our customers recommend us to their
+                friends and family.</p>
+            <div class="all-reviews">
+                <div class="review">
+                    <div class="review-heading">
+                        <img src="./images/image 5 (2).jpg" alt="Maria" class="ava">
+                        <h3>Fedosova Maria
+                            Konstantinovna</h3>
+                    </div>
+                    <span class="text-review">I want to thank the guys for their work. We put your shower part in
+                        repair. I am very grateful
+                        that I referred to the repair as to my own. Great thanks I express the project
+                        to Georgia for its professionalism and approach.
+                        The repair process was turned out in terms, faster than anticipated. Team mobile and
+                        professional. Works performed qualitatively without comments. Quality satisfied. Prices
+                        democratic. I recommend these masters.</span>
+                    <div class="space-speed">
+                        <span class="space"><img src="./images/Space 21.4.svg" alt="Space">40 m2</span>
+                        <span class="space"><img src="./images/calendar.svg" alt="calendar">48 DAYS</span>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-heading">
+                        <img src="./images/image 6.jpg" alt="Sergey" class="ava">
+                        <h3>Afanasyev Sergey Alexandrovich</h3>
+                    </div>
+                    <span class="text-review">I want to thank the guys for their work. We put your shower part in
+                        repair. I am very grateful
+                        that I referred to the repair as to my own. Great thanks I express the project
+                        to Georgia for its professionalism and approach.
+                        The repair process was turned out in terms, faster than anticipated. Team mobile and
+                        professional. Works performed qualitatively without comments. Quality satisfied. Prices
+                        democratic. I recommend these masters.</span>
+                    <div class="space-speed">
+                        <span class="space"><img src="./images/Space 21.4.svg" alt="Space">90 m2</span>
+                        <span class="space"><img src="./images/calendar.svg" alt="calendar">128 DAYS</span>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-heading">
+                        <img src="./images/image 6 (2).jpg" alt="Egor" class="ava">
+                        <h3>Kiriev Egor Leonidovich</h3>
+                    </div>
+                    <span class="text-review">I want to thank the guys for their work. We put your shower part in
+                        repair. I am very grateful
+                        that I referred to the repair as to my own. Great thanks I express the project
+                        to Georgia for its professionalism and approach.
+                        The repair process was turned out in terms, faster than anticipated. Team mobile and
+                        professional. Works performed qualitatively without comments. Quality satisfied. Prices
+                        democratic. I recommend these masters.</span>
+                    <div class="space-speed">
+                        <span class="space"><img src="./images/Space 21.4.svg" alt="Space">56 m2</span>
+                        <span class="space"><img src="./images/calendar.svg" alt="calendar">86 DAYS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="our-clients-background">
+            <img src="./images/Town.svg" alt="town"><img src="./images/Town.svg" alt="town">
+        </div>
+        <div class="map-background">
+            <img src="./images/image 7.2.png" alt="building">
+        </div>
+
+        <section id="contacts" class="question-map container">
+            <form action="#" class="form-measurements-request">
+                <legend>have any questions?</legend>
+                <!-- <div class="question-form-row-1"> -->
+                <label>Name
+                    <input name="name" placeholder="What is your name:" required="true" type="text">
+                </label>
+
+                <label>Phone
+                    <input name="phone" placeholder="Your phone number:" required="true" type="tel">
+                </label>
+                <!-- </div> -->
+                <label>Question
+                    <input name="question" placeholder="I want to know:" required="true" type="text">
+                </label>
+                <div class="div-checkbox">
+                    <input type="checkbox" name="real-checkbox" required="true" class="real-checkbox">
+                    <span class="fake-checkbox"></span>
+                    <label for="personal data" class="personal-data-text">I agree to the processing of personal
+                        data</label>
+                </div>
+                <input type="button" name="call-measurer" value="Submit">
+            </form>
+            <h2>Rostov-on-Don, Nansen St., 239 Shopping Center<br>
+                Decorum Tel +7 (928) 768 32 29</h2>
+            <div class="social-links">
+                <a href="#"><img src="./images/mail.svg" alt="email"></a>
+                <a href="#"><img src="./images/insta.svg" alt="insta"></a>
+            </div>
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/org/dekorum/1113729703/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Декорум</a><a
+                    href="https://yandex.ru/maps/39/rostov-na-donu/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в Ростове‑на‑Дону</a><a
+                    href="https://yandex.ru/maps/39/rostov-na-donu/category/sale_and_lease_of_commercial_real_estate/184107521/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:28px;">Продажа и аренда коммерческой
+                    недвижимости в Ростове‑на‑Дону</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVbYE7KB"
+                    width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container header-grid">
+                <!-- <div class="header-grid"> -->
+                <span class="logo">IC "Repair Design Project"</span>
+                <nav class="nav">
+                    <ul class="navigation">
+                        <li class="navigation-item"><a href="#home">Home</a></li>
+                        <li class="navigation-item"><a href="#projects">Projects</a></li>
+                        <li class="navigation-item"><a href="#measurements">Measurement</a></li>
+                        <li class="navigation-item"><a href="#">Team</a></li>
+                        <li class="navigation-item"><a href="#reviews">Reviews</a></li>
+                        <li class="navigation-item"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <span class="tel">+7 (928) 768-32-39</span>
+                <div class="header-button"><button class="call_request">Request a call</button></div>
+        </footer>
     </main>
 </body>
 
