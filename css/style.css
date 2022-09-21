@@ -8,7 +8,7 @@
 }
 
 .header {
-    background-color: black;
+    background-color:#131313;
     font-size: 11px;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -1020,6 +1020,10 @@ font-weight: 400; */
 
 /* question-map///////////////// */
 
+.question-map-section .container{
+    /* height: 0px; */
+}
+
 .question-map {
     position: relative;
     top: -1200px;
@@ -1093,7 +1097,7 @@ font-weight: 400; */
 }
 
 .footer {
-    background-color: black;
+    background-color:#131313;
     font-size: 11px;
     font-family: 'Nunito Sans', sans-serif;
 }
