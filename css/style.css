@@ -8,9 +8,12 @@
 }
 
 .header {
-    background-color:#131313;
+    background-color: #131313;
     font-size: 11px;
     font-family: 'Nunito Sans', sans-serif;
+}
+.main{
+    height:7200px
 }
 
 .container {
@@ -147,90 +150,37 @@
     border: 1px solid #FFFFFF;
 }
 
+
+
 .projects {
     background-color: #131313;
     height: 1074px;
     color: #FFFFFF;
 }
 
-.h2-projects {
-    /* margin: 0 0 40px 0; */
-    margin: 0 0 2.5vw 0;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 37px;
-    letter-spacing: -0.07em;
-    text-transform: uppercase;
-    color: #E3B873;
+.projects-list {
+    /* display: flex;
+    justify-content: flex-end; */
+    grid-area: 1/2/2/3;
 }
 
-.p-projects {
-    font-size: 14px;
-    line-height: 27px;
-    font-weight: 400;
-    color: #FFFFFF;
-    /* margin: 0 0 60px 0; */
-    margin: 0 0 3.5vw 0;
-}
-
-.h3-projects {
-    font-family: 'Yeseva One';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: #E3B873;
-    margin: 0;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-column-gap: 4vw;
-    grid-template-rows: auto;
-}
-
-.projects-left-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.projects-right-column {
-    margin: 0;
-}
-
-.project-description {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw 2vw;
-    grid-template-rows: auto;
-    margin-bottom: auto;
-}
-
-.proj-desc-element {
-    margin: 0;
-}
-
-.projects-list-column ul {
+.projects-list ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 105px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     margin: 0;
+    /* width: 57%; */
 }
 
-.projects-list-column li {
+.projects-list li {
     margin-right: 4vw;
-    padding-bottom: 2px;
-    margin-bottom: 3vw;
+    /* padding-bottom: 2px; */
+    /* margin-bottom: 3vw; */
     border-bottom: solid #e3b87300;
 }
 
-.projects-list-column a {
+.projects-list a {
     /* font-style: normal; */
     text-decoration: none;
     font-family: 'Yeseva One';
@@ -242,16 +192,101 @@
     border-width: 1px;
 }
 
-.projects-list-column .projects-selected-a,
+.projects-list .projects-selected-a,
 a:active,
 a:hover {
     color: #E3B873;
 }
 
-.projects-list-column li:has(> a:active, a:hover, .projects-selected-a) {
+.projects-list li:has(> a:active, a:hover, .projects-selected-a) {
     color: #E3B873;
     border-bottom: solid #E3B873;
     border-width: 1px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px 0px 0px;
+    /* grid-area: 4/1/5/2; */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 4vw;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.h2-projects {
+    /* margin: 0 0 40px 0; */
+    margin: 0 0 0 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 30px;
+    grid-area: 2/1/4/2;
+}
+
+.p-projects {
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #FFFFFF;
+    /* margin: 0 0 60px 0; */
+    margin: 12px 0 0px 0;
+    grid-area: 3/1/5/2;
+}
+
+.h3-projects {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+    /* grid-area: 4/1/5/2; */
+}
+
+/* .projects-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+} */
+
+/* .projects-right-column {
+    margin: 0;
+} */
+
+.project-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw 2vw;
+    grid-template-rows: auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    grid-area: 4/1/7/2;
+}
+
+.proj-desc-element {
+    margin: 0;
+}
+
+.image-selector {
+    margin-top: 70px;
+    grid-area: 6/1/7/2;
+}
+
+.projects-grid .description-image {
+    grid-area: 2/2/7/3;
+    margin-top: -20px;
 }
 
 .online-control {
@@ -338,23 +373,33 @@ a:hover {
     flex-direction: row;
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .form-online-control-checkbox-line {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     font-family: 'Nunito Sans';
     font-size: 14px;
     line-height: 23px;
     /* or 23px */
     color: #181818;
+    margin-top:20px ;
+}
+
+.form-online-control-data-line .form-online-control-checkbox-line .label{
+    width: 100%;
+    max-width: 100%;
+    border-bottom: none;
+    margin: 0;
 }
 
 .form-online-control label {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
+    max-width: 25%;
 }
 
 .form-online-control-data-line label {
@@ -413,6 +458,8 @@ input[name="phone"]::-webkit-input-placeholder {
 
 /* Custom checkbox code start///////////////////////////////////////// */
 
+
+
 .form-online-control input[name="personal data"] {
     padding-right: 1vw;
     /* Hide the browser's default checkbox */
@@ -426,7 +473,8 @@ input[name="phone"]::-webkit-input-placeholder {
 }
 
 .form-online-control .for-custom-checkbox {
-    display: block;
+    display: flex;
+    
     position: relative;
     padding-left: 35px;
     /* margin-bottom: 12px; */
@@ -436,6 +484,7 @@ input[name="phone"]::-webkit-input-placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    
 }
 
 /* Create a custom checkbox */
@@ -1020,17 +1069,21 @@ font-weight: 400; */
 
 /* question-map///////////////// */
 
-.question-map-section .container{
-    /* height: 0px; */
+.question-map-section .container {
+    /* position: relative;
+    top: -1200px; */
+}
+
+.question-map-section {
+    position: relative;
+    top: -1200px;
+    margin-bottom: -1130px;
 }
 
 .question-map {
-    position: relative;
-    top: -1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: -1130px;
 }
 
 .question-map .form-measurements-request>label:nth-of-type(-n+2) {
@@ -1097,7 +1150,7 @@ font-weight: 400; */
 }
 
 .footer {
-    background-color:#131313;
+    background-color: #131313;
     font-size: 11px;
     font-family: 'Nunito Sans', sans-serif;
 }

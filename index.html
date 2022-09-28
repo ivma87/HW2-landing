@@ -52,21 +52,29 @@
             </div>
         </section>
         <section id="projects" class="projects">
-            <div class="container projects-grid">
-                <div class="projects-empty-column"></div>
-                <div class="projects-list-column">
+            <div class="container projects-container">
+                <!-- <div class="projects-list-column projects-list">
                     <ul>
                         <li><a class="projects-selected-a" href="#">Rostov-on-Don, Admiral</a></li>
                         <li><a href="#">Sochi Thieves</a></li>
                         <li><a href="#">Rostov-on-Don Patriotic</a></li>
                     </ul>
-                </div>
-                <div class="projects-left-column">
+                </div> -->
+                <div class="projects-grid">
+                    <div class="projects-list-column projects-list">
+                        <ul>
+                            <li><a class="projects-selected-a" href="#">Rostov-on-Don, Admiral</a></li>
+                            <li><a href="#">Sochi Thieves</a></li>
+                            <li><a href="#">Rostov-on-Don Patriotic</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="projects-left-column projects-column"> -->
                     <h2 class="h2-projects">
                         Completed<br> projects
                     </h2>
                     <p class="p-projects">
-                        Only a small part of the work performed by our company is presented on the site. For 14 years on
+                        Only a small part of the work performed by our company is presented on the site. For 14
+                        years on
                         in the
                         construction market we have made happy more than 1000 families
                     </p>
@@ -98,10 +106,12 @@
                         </div>
                     </div>
                     <img src="./images/Group 8.4.svg" alt="image selector" class="image-selector">
-                </div>
-                <div class="projects-right-column">
-                    <img src="./images/image 2.1.png" alt="Rostov-on-Don, Admiral">
+                    <img src="./images/image 2.1.png" alt="Rostov-on-Don, Admiral" class="description-image">
+                    <!-- </div> -->
+                    <!-- <div class="projects-right-column"> -->
 
+
+                    <!-- </div> -->
                 </div>
             </div>
         </section>
@@ -132,16 +142,24 @@
                                 <input name="phone" placeholder="Your phone number:" required="true" type="tel">
                             </label>
                             <input type="submit" name="submit" value="Submit">
+                            <div class="form-online-control-checkbox-line">
+                                <div class="for-custom-checkbox">
+                                    <input type="checkbox" name="personal data" required="true">
+                                    <span class="span-checkbox"></span>
+                                    <label for="personal data" class="label">I agree to the processing of personal
+                                        data</label>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-online-control-checkbox-line">
+                        <!-- <div class="form-online-control-checkbox-line">
                             <div class="for-custom-checkbox">
                                 <input type="checkbox" name="personal data" required="true">
                                 <span class="span-checkbox"></span>
                                 <label for="personal data" class="label">I agree to the processing of personal
                                     data</label>
                             </div>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
             </div>
@@ -352,8 +370,8 @@
         </div>
 
         <section id="contacts" class="question-map-section">
-            <div class="container">
-                <div class="question-map">
+            <!-- <div class=""> -->
+                <div class="question-map container">
                     <form action="#" class="form-measurements-request">
                         <legend>have any questions?</legend>
                         <!-- <div class="question-form-row-1"> -->
@@ -382,16 +400,17 @@
                         <a href="#"><img src="./images/mail.svg" alt="email"></a>
                         <a href="#"><img src="./images/insta.svg" alt="insta"></a>
                     </div>
-                    <div style="position:relative;overflow:hidden;"><a
+                    <div class="map" style="position:relative;overflow:hidden;"><a
                             href="https://yandex.ru/maps/org/dekorum/1113729703/?utm_medium=mapframe&utm_source=maps"
                             style="color:#eee;font-size:12px;position:absolute;top:0px;">Декорум</a>
                         <iframe src="https://yandex.ru/map-widget/v1/-/CCUVbYE7KB" width="560" height="400"
                             frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
 
         </section>
+    </main>
         <footer class="footer">
             <div class="container header-grid">
                 <!-- <div class="header-grid"> -->
@@ -409,7 +428,6 @@
                 <span class="tel">+7 (928) 768-32-39</span>
                 <div class="header-button"><button class="call_request">Request a call</button></div>
         </footer>
-    </main>
 </body>
 
 </html>
